@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clock, .clock__inner, .clock .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #33658A;
+}
+
+.clock {
+  background-color: #86BBD8;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  -webkit-box-shadow: 8px 8px 15px #0000007d;
+          box-shadow: 8px 8px 15px #0000007d;
+}
+
+.clock__inner {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #33658A;
+  border: 3px #2F4858 solid;
+}
+
+.clock .scale {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clock .scale__unit {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 8px #2F4858;
+          box-shadow: 0px 0px 8px #2F4858;
+}
+
+.clock .scale__unit:nth-child(5n+1) {
+  width: 3px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clock .center {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 8px #2F4858;
+          box-shadow: 0px 0px 8px #2F4858;
+}
+
+.clock .centerPin {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 49.5%;
+  -webkit-box-shadow: 0px 0px 8px #2F4858;
+          box-shadow: 0px 0px 8px #2F4858;
+  z-index: 2;
+}
+
+.clock .hand-hour {
+  height: 65px;
+  width: 8px;
+  background-color: #F26419;
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  -webkit-transform-origin: 50% 4px;
+          transform-origin: 50% 4px;
+  z-index: 1;
+}
+
+.clock .hand-minute {
+  height: 90px;
+  width: 8px;
+  background-color: #F6AE2D;
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  -webkit-transform-origin: 50% 4px;
+          transform-origin: 50% 4px;
+}
+
+.clock .hand-second {
+  border-style: solid;
+  border-width: 120px 2px 0px 2px;
+  border-color: #F6AE2D transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 49.4%;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.clock .clockNumber {
+  position: absolute;
+  top: 70%;
+  left: 36%;
+  z-index: 0;
+}
+
+.clock .clockNumber > span {
+  border-radius: 5px;
+  padding: 2px;
+  color: #FFF;
+  font: 20px Sans-Serif;
+  -webkit-box-shadow: 0px 0px 8px #2F4858;
+          box-shadow: 0px 0px 8px #2F4858;
+}
+/*# sourceMappingURL=style.css.map */
