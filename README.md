@@ -7,9 +7,7 @@
 ## 使用技術
 
 - JavaScript
-
 - SCSS
-
 - HTML
 
 
